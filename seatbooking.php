@@ -822,7 +822,7 @@ if (!isset($_SESSION['uname'])) {
   error = " <font color='red'>!Requrie Name.</font> ";
   document.getElementById( "nameerror" ).innerHTML = error;
   return false;
- }
+ }}
 </script>
 </body>
 </html>
