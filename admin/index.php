@@ -7,6 +7,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Dashboard Page</title>
+    <link rel="stylesheet" href='css/all.css' type='text/css'>
+    <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
+    <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
 
 <?php 
 session_start();  

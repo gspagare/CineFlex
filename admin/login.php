@@ -5,6 +5,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="ajaxValidation.js"></script>
+  <link rel="stylesheet" href='css/all.css' type='text/css'>
+  <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
+  <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
   <style type="text/css">
     li{color: red;}
   </style>
