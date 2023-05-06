@@ -32,4 +32,3 @@ if($_POST['card_name'] != '' && $_POST['card_number'] != '' && $_POST['ex_date']
 		echo 1;
 	}	
 }
-?>
