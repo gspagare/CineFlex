@@ -1,68 +1,40 @@
+
 <html>
 <head>
 <title> Login Page</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="site.css" />
+<link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-<div>
 	<div class="parent-container">
-
-		<table width="100%" height="100%">
-		<tr>
-			<td align="center" valign="middle">
+	<img class="login_bg" src="login_bg.jpg" alt="NO BG">
 				<div class="loginholder">
-        
-					<table style="background-color:white;" class="table-condensed">
-					<tr>
-
-  						<a href="./index.html"><img src="img/logo.png" alt="" width="180px"></a>
-					</tr>
-					<tr>
-						<td><b>User Id:</b></td>
-					</tr>
-					<tr>
-						<td><input type="text" class="inputbox" id="username"/>
-              <br><p id="nameerror"></p></td>
-					</tr>
-					<tr>
-						<td><b>Password:</b></td>
-					</tr>
-					<tr>
-						<td><input type="text" class="inputbox" id="password" />
-              <br><p id="passerror"></p><div id="msg"></div> </td>
-            
-					</tr>
-					<tr>
-						<td align="center"><br />
-
-						 <button class="btn-normal" id="login">LOGIN</button>
-						</td>
-					</tr>
-					<tr>
-						<td align="left"><br />
-						<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span></td>
-
-					</tr>
-					<td><a href="register_form.php"> Resiter now</a></td>
-					<tr>
-						<td><hr style="background-color:blue;height:1px;margin:0px;"/></td>
-					</tr>
-					<tr>
-						<td align="center"></td>
-					</tr>
-
-					</table>
-        
+					<h2>Login Here</h2>
+					<a href="./index.html"><img src="img/logo1.png" alt="no image found" width="150px"><a>
+					<form>
+						<div class="userbox">
+							<input type="text" name="" class="inputbox" id="username" required=""/>
+							<label>Username</label>
+						</div>
+						<div class="userbox">
+							<input type="password" name="" class="inputbox" id="password" required=""/>
+							<label>Password</label>
+						</div>
+						<a class="loginbtn" href="./index.php"
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>LOGIN</a>
+						<div class="new_text">
+							<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span>
+							<a href="register_form.php">Resiter now</a>
+						</div>
+					</form>        
 				</div>
-			</td>
-		</tr>
-		</table>
 	</div>
-</div>
 <script type="text/javascript">
 
 	$(document).ready(function(){

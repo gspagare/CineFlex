@@ -288,6 +288,7 @@ ol {
 .header__top__links {
 	display: inline-block;
 	margin-right: 25px;
+	float: right;
 }
 
 .header__top__links span{
@@ -712,12 +713,13 @@ img, video, iframe, embed, object {
     margin-left: 25px;
 }
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* display: -ms-flexbox; */
+    /* display: flex; */
+    /* -ms-flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin-right: -15px;
     margin-left: -15px;
+	float: right;
 }
 
 .col-md-4 {
@@ -844,6 +846,7 @@ h3 {
 
   .form-control:active, .form-control:focus {
     outline: none;
+	box-shadow: none;
     -webkit-box-shadow: none;
     border-color: #000; }
 

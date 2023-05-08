@@ -17,7 +17,6 @@
         </div>
         
         <div id="mobile-menu-wrap"></div>
-        
     </div>
     <!-- Offcanvas Menu End -->
 
@@ -26,9 +25,6 @@
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-7">
-                        
-                    </div>
                     <?php
                     include_once "Database.php";
                     if (isset($_SESSION['uname'])) {
