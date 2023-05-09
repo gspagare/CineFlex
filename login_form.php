@@ -17,17 +17,15 @@
 					<form>
 						<div class="userbox">
 							<input type="text" name="" class="inputbox" id="username" required=""/>
+              <p id="nameerror"></p>
 							<label>Username</label>
 						</div>
 						<div class="userbox">
 							<input type="password" name="" class="inputbox" id="password" required=""/>
+              <p id="passerror"></p><div id="msg"></div>
 							<label>Password</label>
 						</div>
-						<a class="loginbtn" href="./index.php"
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>LOGIN</a>
+						<a class="loginbtn" id="login" href="./login.php">LOGIN</a>
 						<div class="new_text">
 							<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span>
 							<a href="register_form.php">Resiter now</a>
