@@ -293,6 +293,7 @@ ol {
 	display: flex;
 	margin-right: 25px;
 	width: 250px;
+	padding-top: 5px;
 }
 
 .header__top__links span{
@@ -379,10 +380,13 @@ ol {
 }
 
 .header__menu {
+	display: flex;
 	text-align: center;
 	padding: 25px 0 25px;
-	width: max-content;
+	width: 88vw;
+	justify-content: space-between;
 	margin: auto;
+	margin-left: 10%;
 }
 
 .header__menu ul li {
@@ -723,12 +727,19 @@ img, video, iframe, embed, object {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+}
+
+.navbar {
+	justify-content: center;
+	text-align: center;
 }
 
 .login_line {
 	float: right;
+}
+
+.navbar {
+	display: flex;
 }
 
 .col-md-4 {

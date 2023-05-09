@@ -4,7 +4,7 @@
 <html>
 <head>
 
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
         $(document).ready(function(){
             $('.larger').click(function(){
                 var text= "";
-              
+             
                 $('.larger:checked').each(function(){
                     text+=$(this).val()+ ',';
 
@@ -56,7 +56,7 @@
         });
         });
 
-        
+       
         </script>
 </head>
     <div>
@@ -69,7 +69,7 @@
             $movie=$_GET['movie'];
             $date= date("Y-m-d");
 
-            $result = mysqli_query($conn,"SELECT * FROM customers WHERE show_time = '".$time."' && movie = '".$movie."'payment_date = '".$date."'");
+            $result = mysqli_query($conn,"SELECT * FROM customers WHERE show_time = '".$time."' && movie = '".$movie."' && payment_date = '".$date."'");
 
       ?><form method="post"><input type="hidden" name="t1" value="<?php      
       while($row = mysqli_fetch_array($result)) {
@@ -84,23 +84,23 @@
     <?php if(isset($_POST['submit'])){
                     $seats= $_POST['t1'];
                     $seats1 = explode(",", $seats);
-                 ?>       
+                 ?>      
     <div class="row">
         <div class="col-lg-6">
     <div class="seatCharts-container">
      
-                
-      
+               
+     
         <div class="front">SCREEN</div>
          <center><p id="notvalid" style="color: red; font-size: 20px;"></p></center>
         <div class="seat_type">Silver : 100</div>
         <div id="validated"></div>
       <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-5">
-                
+               
                 <table>
                     <tr>
-                        <td class="line" style="width: 10%;">I</td> 
+                        <td class="line" style="width: 10%;">I</td>
                         <td><input type="checkbox" class="larger" name="seat[]" value="I1" <?php
                          if(in_array("I1",$seats1)){
                                     echo "disabled";
@@ -200,7 +200,7 @@
                     </tr>
                 </table>
             </div>
-            
+           
             <div class="col-lg-5 col-md-5 col-sm-7">
                 <div class="seattable" id="silver">
                 <table>
@@ -480,7 +480,7 @@
                     </tr>
                 </table>
             </div>
-            
+           
             <div class="col-lg-5 col-md-5 col-sm-7">
                 <div class="seattable" id="gold">
                 <table>
@@ -650,7 +650,7 @@
             </div>
         </div>
     </div>
-    
+   
          <div class="seat_type">Platimun : 300</div>
 
       <div class="row">
@@ -658,7 +658,7 @@
                 <table>
                     <tr>
                         <td class="line" style="width: 10%;">A</td>
-                        
+                       
                         <td><input type="checkbox" class="larger" name="seat[]" value="A1" <?php
                          if(in_array("A1",$seats1)){
                                     echo "disabled";
@@ -690,10 +690,10 @@
                                 }
                     ?>></td>
                     </tr>
-                    
+                   
                 </table>
             </div>
-            
+           
             <div class="col-lg-5 col-md-5 col-sm-7">
                 <div class="seattable">
                 <table>
@@ -729,12 +729,12 @@
                                 }
                     ?>></td>
                     </tr>
-                    
+                   
                 </table>
             </div>
         </div>
     </div>
-    
+   
 
 
     </div>
@@ -742,22 +742,22 @@
     <div class="col-lg-6">
        
         <table>
-            <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti;">Movie:</font></td>
-                <td bgcolor="79F9E2"><center><font size=5 style="font-family: Shruti; "><?php echo $_GET['movie'];?></font></center></td>
+            <tr><td width="50%"><font color="blue" size="5px" style="font-family:  Shruti;">Movie:</font></td>
+                <td bgcolor="79F9E2"><center><font size=5 style=" Shruti; "><?php echo $_GET['movie'];?></font></center></td>
             </tr>
-            <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti;">Time:</font></td>
-                <td bgcolor="ECF68C"><center><font size=5 style="font-family: Shruti;"><?php echo $_GET['time'];?></font></center></td>
+            <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti">Time:</font></td>
+                <td bgcolor="ECF68C"><center><font size=5 style=" Shruti;"><?php echo $_GET['time'];?></font></center></td>
             </tr>
-            <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti;">Seat:</font></td>
+            <tr><td width="50%"><font color="blue" size="5px" style=" font-family: Shruti;">Seat:</font></td>
                 <td> <input type="text" id="selectedtext" name="seats" placeholder="selected checkboxs"></td>
             </tr>
-            <tr><td width="50%"><font color="blue" size="5px"style="font-family: Shruti;">Total Seat:</font></td>
+            <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti;">Total Seat:</font></td>
                <td> <input type="text" id="count" name="totalseat" placeholder="Total Seats"></td>
             </tr>  
             <input type="hidden" name="movie" value="<?php echo $_GET['movie'];?>">
             <input type="hidden" name="show" value="<?php echo $_GET['time'];?>">
 </table>
-<?php 
+<?php
 if (!isset($_SESSION['uname'])) {
   ?>
 <div class="col-lg-12">
@@ -772,7 +772,7 @@ if (!isset($_SESSION['uname'])) {
       <a class="btn btn-primary btn-sm" href="login_form.php">Login</a>
     </div>
   </div>
-</div> 
+</div>
   <?php
 }else{
 ?>
