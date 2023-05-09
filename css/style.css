@@ -103,6 +103,7 @@ ul,
 ol {
 	padding: 0;
 	margin: 0;
+	width: max-content;
 }
 
 /*---------------------
@@ -269,11 +270,14 @@ ol {
 
 .header {
 	background: #ffffff;
+	width: 1000px;
 }
 
 .header__top {
 	background: #111111;
 	padding: 10px 0;
+	height: 50px;
+	width: 100vw;
 }
 
 .header__top__left p {
@@ -286,9 +290,9 @@ ol {
 }
 
 .header__top__links {
-	display: inline-block;
+	display: flex;
 	margin-right: 25px;
-	float: right;
+	width: 250px;
 }
 
 .header__top__links span{
@@ -376,7 +380,9 @@ ol {
 
 .header__menu {
 	text-align: center;
-	padding: 26px 0 25px;
+	padding: 25px 0 25px;
+	width: max-content;
+	margin: auto;
 }
 
 .header__menu ul li {
@@ -713,12 +719,15 @@ img, video, iframe, embed, object {
     margin-left: 25px;
 }
 .row {
-    /* display: -ms-flexbox; */
-    /* display: flex; */
-    /* -ms-flex-wrap: wrap;
-    flex-wrap: wrap; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.login_line {
 	float: right;
 }
 
