@@ -19,7 +19,7 @@
 
 5.  Banner Section
 6.  Product Section
-7.  Intagram Section
+7.  Instagram Section
 8.  Latest Section
 9.  Contact
 10.  Footer Style
@@ -291,15 +291,11 @@ ol {
 
 .header__top__links {
 	display: flex;
-	margin-right: 25px;
-	width: 250px;
-	padding-top: 5px;
+	margin-right: 10px;
+	width: 300px;
 }
 
-.header__top__links span{
-	color : #ffff;
-}
-.header__top__links a {
+.header__top__links a, .header__top__links span {
 	color: #ffffff;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -307,12 +303,14 @@ ol {
 	margin-right: 28px;
 	display: inline-block;
 	margin-left: 20px;
+	margin-top: 5px;
 }
 .avatar {
   vertical-align: middle;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin-top: -5px;
 }
 
 .header__top__links a:last-child {
@@ -380,13 +378,10 @@ ol {
 }
 
 .header__menu {
-	display: flex;
 	text-align: center;
 	padding: 25px 0 25px;
-	width: 88vw;
-	justify-content: space-between;
+	width: max-content;
 	margin: auto;
-	margin-left: 10%;
 }
 
 .header__menu ul li {
@@ -727,19 +722,12 @@ img, video, iframe, embed, object {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-.navbar {
-	justify-content: center;
-	text-align: center;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .login_line {
 	float: right;
-}
-
-.navbar {
-	display: flex;
 }
 
 .col-md-4 {

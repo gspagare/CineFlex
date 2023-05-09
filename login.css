@@ -109,7 +109,7 @@ font-size: 16px;
 }
 
 .new_text span a, .new_text a {
-    color: #fff;
     font-size: 16px;
-    padding: 10px;
+    color: #fff;
+    padding: 15px;
 }

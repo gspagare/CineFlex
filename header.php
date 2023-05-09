@@ -24,7 +24,7 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
-                <div class="row">
+                <div class="row login_line">
                     <?php
                     include_once "Database.php";
                     if (isset($_SESSION['uname'])) {
@@ -47,7 +47,7 @@
                             }
                         }
                         ?>
-                                <span>Hii <?php echo $_SESSION['uname'];?></span>
+                                <span class="header__top__links">Hii <?php echo $_SESSION['uname'];?></span>
                                 <a href="logout.php"> Logout</a>
                             </div>
                            
@@ -74,11 +74,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div> 
-                </div>
+                
                 <div class="col-lg-9 col-md-9">
                     <nav class="header__menu mobile-menu">
                         <ul>
