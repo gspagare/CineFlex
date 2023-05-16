@@ -22,7 +22,7 @@
 7.  Instagram Section
 8.  Latest Section
 9.  Contact
-10.  Footer Style
+10. Footer Style
 -------------------------------------------------------------------*/
 
 /*----------------------------------------*/
@@ -291,14 +291,11 @@ ol {
 
 .header__top__links {
 	display: flex;
-	margin-right: 25px;
-	width: 250px;
+	margin-right: 10px;
+	width: 300px;
 }
 
-.header__top__links span{
-	color : #ffff;
-}
-.header__top__links a {
+.header__top__links a, .header__top__links span {
 	color: #ffffff;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -306,12 +303,14 @@ ol {
 	margin-right: 28px;
 	display: inline-block;
 	margin-left: 20px;
+	margin-top: 5px;
 }
 .avatar {
   vertical-align: middle;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin-top: -5px;
 }
 
 .header__top__links a:last-child {

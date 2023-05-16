@@ -47,7 +47,7 @@
                             }
                         }
                         ?>
-                                <span>Hii <?php echo $_SESSION['uname'];?></span>
+                                <span class="header__top__links">Hii <?php echo $_SESSION['uname'];?></span>
                                 <a href="logout.php"> Logout</a>
                             </div>
                            

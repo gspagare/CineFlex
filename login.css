@@ -107,3 +107,16 @@ font-size: 16px;
     position: absolute;
     display: block;
 }
+
+.new_text span a, .new_text a {
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+}
+
+.new_text span a:hover, .new_text a:hover {
+    font-size: 16px;
+    color: #03e9f4;
+    padding: 15px;
+    text-decoration: none;
+}

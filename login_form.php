@@ -25,9 +25,9 @@
               <p id="passerror"></p><div id="msg"></div>
 							<label>Password</label>
 						</div>
-						<a class="loginbtn" id="login" href="./login.php">LOGIN</a>
+						<a class="loginbtn" id="login">LOGIN</a>
 						<div class="new_text">
-							<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span>
+							<a href="forget_password.php"> Forget your Password ?</a>
 							<a href="register_form.php">Resiter now</a>
 						</div>
 					</form>        
@@ -43,14 +43,14 @@
    
      if( username == "" )
  {
-  error = " <font color='red'>!Requrie Name.</font> ";
+  error = " <font color='red'; font size=3>Requried Name.</font> ";
   document.getElementById( "nameerror" ).innerHTML = error;
   return false;
  }
   
   if( password == "")
  {
-  error = " <font color='red'>!Requrie Email.</font> ";
+  error = " <font color='red'; font size=3>Requried Password.</font> ";
   document.getElementById( "passerror" ).innerHTML = error;
   return false;
  }
@@ -62,7 +62,7 @@
           if(response == 1){
                                     window.location = "index.php";
                                 }else{
-                                     error = " <font color='red'>!Invalid UserId.</font> ";
+                                     error = " <font color='red'; font size=3>Invalid UserId or Password.</font> ";
                                      document.getElementById( "msg" ).innerHTML = error;
                                       return false;
                                 }
