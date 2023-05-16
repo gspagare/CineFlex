@@ -39,12 +39,10 @@ include("header.php");
 
 ?>
 
-<div class="container">
-   <img src=image/theatre_2.jpg alt="" class="image-resize" style="width: 100%; height: 400px;">
-</div>
+<img src="img/background.jpeg" alt="" class="image-resize" style="width: 100%; height: 600px;">
 
 <div class="container">
-    <h2>Running Movies</h2>
+    <h2 id="runningmovieline">Running Movies</h2>
      <div class="row">
 <?php
 include_once 'Database.php';

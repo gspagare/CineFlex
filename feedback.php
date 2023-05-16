@@ -37,7 +37,7 @@ session_start();
 include("header.php");
 ?>
   <div class="content">    
-    <div class="ch3ontainer">      
+    <div class="container">      
       <div class="row justify-content-center">
         <div class="col-md-10">
            <div class="row align-items-center">
