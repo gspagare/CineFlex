@@ -106,7 +106,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
       
            <div class="col-12">
-              <input type="submit" name="add_feedback" class="btn btn-primary add-product" value="Add Product">
+              <input type="submit" name="add_feedback" class="btn btn-primary add-product" value="Add Feedback">
             </div>
           </div>
           
