@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Theater and Show Page</title>
+    <title>Theatre and Show Page</title>
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['admin'])) {
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Feedback</h2>
+      		<h2>Theatre and Shows</h2>
       	</div>
       	<div class="col-2">
           <button data-toggle="modal" data-target="#add_show" class="btn btn-primary btn-sm">Add Show</button>
@@ -38,9 +38,9 @@ if (!isset($_SESSION['admin'])) {
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>id</th>
+              <th>Id</th>
               <th>Show</th>
-              <th>Theater</th>
+              <th>Theatre</th>
             </tr>
           </thead>
           <tbody id="product_list">
@@ -87,14 +87,14 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>show</label>
+                <label>Show</label>
                 <input type="time" class="form-control" name="edit_time" id="edit_time" value="<?php echo $row['show'];?>">
               </div>
             </div>
             
             <div class="col-12">
             
-              <input type="submit" name="updatetime" id="updatetime" value="update" class="btn btn-primary">
+              <input type="submit" name="updatetime" id="updatetime" value="Update" class="btn btn-primary">
             </div>
           </div>
           
@@ -115,7 +115,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
       <div class="modal-body">
         <form id="insert_movie" action="insert_data.php" method="post">
-          <h4> Yor Sour This id "<?php echo $row['id'];?>" is delete.</h4>
+          <h4>The show  <?php echo $row['show'];?>  has been deleted.</h4>
           <input type="hidden" name="id" value="<?php echo $row['id'];?>">
           <input type="submit" name="deletetime" id="deletetime" value="OK" class="btn btn-primary">
           </form>
@@ -146,7 +146,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Theatre and Show</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -156,9 +156,9 @@ if (mysqli_num_rows($result) > 0) {
           
             <div class="col-12">
               <div class="form-group">
-                <label>theater-name</label>
+                <label>Theatre name</label>
                 <select class="form-control" name="theater_name" id="theater_name">
-                  <option value="">theater name</option>
+                  <option value="">Theatre name</option>
                   <option value="1">1</option>
                   <option value="2">2</option>                    
                 </select>
@@ -175,7 +175,7 @@ if (mysqli_num_rows($result) > 0) {
             <input type="hidden" name="add_product" value="1">
             <div class="col-12">
             
-              <input type="submit" name="addshow" id="addshow" value="submit" class="btn btn-primary">
+              <input type="submit" name="addshow" id="addshow" value="Submit" class="btn btn-primary">
             </div>
           
           
@@ -200,11 +200,11 @@ var show=document.myform.show.value;
 
 
 if (theater_name==""){  
-  alert("Reqiure theater name");  
+  alert("Require Theatre name");  
   return false;  
 }
 else if(show==""){  
-  alert("Reqiure Enter show");  
+  alert("Require Show");  
   return false;  
   }  
 

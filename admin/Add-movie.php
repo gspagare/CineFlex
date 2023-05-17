@@ -80,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
       <div class="modal-body">
         <form id="insert_movie" action="insert_data.php" method="post">
-          <h4> Yor Sour This id "<?php echo $row['id'];?>" is delete.</h4>
+          <h4> The movie<?php echo $row['movie_name'];?> has been deleted.</h4>
           <input type="hidden" name="id" value="<?php echo $row['id'];?>">
           <input type="submit" name="deletemovie" id="deletemovie" value="OK" class="btn btn-primary">
           </form>
@@ -94,7 +94,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Edit Movie</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -112,19 +112,19 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Directer Name</label>
+                <label>Director Name</label>
                 <input class="form-control" name="edit_directer_name" id="edit_directer_name" value="<?php echo $row['directer'];?>">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>category</label>
+                <label>Category</label>
                 <input class="form-control" name="edit_category" id ="edit_category" value="<?php echo $row['categroy']; ?>">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>language</label>
+                <label>Language</label>
                 <input type="text" name="edit_language" id="edit_language" class="form-control" value="<?php echo $row['language'];?>">
               </div>
             </div>
@@ -152,7 +152,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
              <div class="col-12">
               <div class="form-group">
-                <label>Tailer</label>
+                <label>Trailer</label>
                 <input type="text" name="edit_tailer" id="edit_tailer" class="form-control" value="<?php echo $row['you_tube_link'];?>">
               </div>
             </div>
@@ -161,21 +161,21 @@ if (mysqli_num_rows($result) > 0) {
                 <label>Action</label>
                 <select class="form-control" name="edit_action">
                   <option value="<?php echo $row['action'];?>"><?php echo $row['action'];?></option>
-                  <option value="upcoming">upcoming</option>
-                  <option value="running">running</option>                    
+                  <option value="upcoming">Upcoming</option>
+                  <option value="running">Running</option>                    
                 </select>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Decription</label>
+                <label>Description</label>
                 <textarea type="text" name="decription" id="decription" class="form-control" value="<?php echo $row['decription'];?>">
                 <?php echo $row['decription'];?></textarea>
               </div>
             </div>       
             <div class="col-12">
               <div class="form-group">
-                <label>Set of Time</label>
+                <label>Movie Poster</label>
                 <img src="image/<?php echo $row['image'];?>" width="10%">
                 <input type="file" name="edit_img" id="edit_img" class="form-control">
                 <input type="hidden" name="old_image" value="<?php echo $row['image'];?>" id="old_image" class="form-control">              
@@ -184,7 +184,7 @@ if (mysqli_num_rows($result) > 0) {
             <input type="hidden" name="add_product" value="1">
             <div class="col-12">
             
-              <input type="submit" name="updatemovie" id="updatemovie" value="update" class="btn btn-primary">
+              <input type="submit" name="updatemovie" id="updatemovie" value="Update" class="btn btn-primary">
             </div>
           </div>
           
@@ -225,38 +225,38 @@ if (mysqli_num_rows($result) > 0) {
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Movie Name</label>
-		        		<input class="form-control" name="movie_name" id="movie_name" placeholder="movie name">
+		        		<input class="form-control" name="movie_name" id="movie_name" placeholder="Movie name">
 		        	</div>
         		</div>
             <div class="col-12">
               <div class="form-group">
-                <label>Directer Name</label>
-                <input class="form-control" name="directer_name" id="directer_name" placeholder="Directer name">
+                <label>Director Name</label>
+                <input class="form-control" name="directer_name" id="directer_name" placeholder="Director name">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
                 <label>Release Date</label>
-                <input class="form-control" name="release_date" id="release_date" placeholder="Directer name">
+                <input class="form-control" name="release_date" id="release_date" placeholder="Enter Release Date">
               </div>
             </div>
       
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>category</label>
-		        		<input class="form-control" name="category" id ="category" placeholder="Enter category">
+		        		<label>Category</label>
+		        		<input class="form-control" name="category" id ="category" placeholder="Enter Category">
 		        	</div>
         		</div>
             <div class="col-12">
               <div class="form-group">
-                <label>language</label>
+                <label>Language</label>
                 <input type="text" name="language" id="language" class="form-control" placeholder="Enter Language">
               </div>
             </div>
             
             <div class="col-12">
               <div class="form-group">
-                <label>Theater 1</label>
+                <label>Theatre 1</label>
               <?php
                 $result = mysqli_query($conn,"SELECT * FROM theater_show");
                 if (mysqli_num_rows($result) > 0) {
@@ -276,7 +276,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Theater 2</label>
+                <label>Theatre 2</label>
               <?php
                 $result = mysqli_query($conn,"SELECT * FROM theater_show");
                 if (mysqli_num_rows($result) > 0) {
@@ -296,8 +296,8 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Tailer</label>
-                <input type="text" name="tailer" id="tailer" class="form-control" placeholder="Enter Tailer">
+                <label>Trailer</label>
+                <input type="text" name="tailer" id="tailer" class="form-control" placeholder="Enter Trailer">
               </div>
             </div>
              <div class="col-12">
@@ -305,21 +305,21 @@ if (mysqli_num_rows($result) > 0) {
                 <label>Action</label>
                 <select class="form-control" name="action" id="action">
                   <option value="">Action</option>
-                  <option value="upcoming">upcoming</option>
-                  <option value="running">running</option>                    
+                  <option value="upcoming">Upcoming</option>
+                  <option value="running">Running</option>                    
                 </select>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Decription</label>
+                <label>Description</label>
                 <textarea type="text" name="decription" id="decription" class="form-control">
                 </textarea>
               </div>
             </div>
         		<div class="col-12">
               <div class="form-group">
-                <label>Uplode Poster</label>
+                <label>Upload Poster</label>
                 <input type="file" name="img" value="img" id="img" class="form-control">
               </div>
             </div>
@@ -350,10 +350,10 @@ var directer=document.myform.directer_name.value;
   
 
 if (name==""){  
-  alert("Requre Movie Name");  
+  alert("Require Movie Name");  
   return false;  
 }else if(directer==""){  
-  alert("Requre Directer Name");  
+  alert("Require Director Name");  
   return false;  
   }  
 }
