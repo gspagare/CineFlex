@@ -272,14 +272,10 @@ ol {
 }
 
 .header__top__links {
-	width: 250px;
+	/* width: 250px; */
 	display: flex;
-<<<<<<< Updated upstream
-	/* margin-right: -10px; */
-=======
 	margin-right: -100px;
 	width: max-content;
->>>>>>> Stashed changes
 	float: right;
 	right: 0;
 }
