@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Manageuser Page</title>
+    <title>Manage User Page</title>
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
@@ -36,13 +36,13 @@ if (!isset($_SESSION['admin'])) {
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>id</th>
+              <th>Id</th>
               <th>Name</th>
-              <th>email</th>
-              <th>mobile</th>
-              <th>city</th>
-              <th>password</th>
-              <th>image</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>City</th>
+              <th>Password</th>
+              <th>Image</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -62,22 +62,22 @@ if (mysqli_num_rows($result) > 0) {
               <td><?php echo $row['city'];?></td>
               <td><?php echo $row['password'];?></td>
               <td><img src="image/<?php echo $row['image']; ?>" alt="" class="resize"></td>
-              <td><button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit Movie</button>
-              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete Movie</button></td></td>
+              <td><button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit User</button>
+              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete User</button></td></td>
             </tr>
 
  <div class="modal fade" id="delete_users_modal<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Delete Movie</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Delete User</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <form id="insert_movie" action="insert_data.php" method="post">
-          <h4> Yor Sour This id "<?php echo $row['id'];?>" is delete.</h4>
+          <h4>The user  <?php echo $row['username'];?>  has been deleted.</h4>
           <input type="hidden" name="id" value="<?php echo $row['id'];?>">
           <input type="submit" name="deleteuser" id="deleteuser" value="OK" class="btn btn-primary">
           </form>
@@ -115,25 +115,25 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>mobile</label>
+                <label>Mobile</label>
                 <input type="number" class="form-control" name="edit_mobile" id ="edit_mobile" value="<?php echo $row['mobile']; ?>">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>city</label>
+                <label>City</label>
                 <input class="form-control" name="edit_city" id ="edit_city" value="<?php echo $row['city']; ?>">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>passord</label>
+                <label>Password</label>
                 <input class="form-control" name="edit_password" id ="edit_password" value="<?php echo $row['password']; ?>">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Set of Time</label>
+                <label>Image</label>
                 <img src="image/<?php echo $row['image'];?>" width="10%">
                 <input type="file" name="edit_img" id="edit_img" class="form-control">
                 <input type="hidden" name="old_image" value="<?php echo $row['image'];?>" id="old_image" class="form-control">              
@@ -181,7 +181,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-12">
               <div class="form-group">
                 <label>Username</label>
-                <input class="form-control" name="username" id="username" placeholder="user name" >
+                <input class="form-control" name="username" id="username" placeholder="Enter User name" >
               </div>
             </div>
             <div class="col-12">
@@ -194,7 +194,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-12">
               <div class="form-group">
                 <label>Mobile no</label>
-                <input type="number" class="form-control" name="mobile" id ="mobile" placeholder="Mobile no">
+                <input type="number" class="form-control" name="mobile" id ="mobile" placeholder="Enter Mobile no">
               </div>
             </div>
             <div class="col-12">
@@ -218,7 +218,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <input type="hidden" name="add_product" value="1">
               <div class="col-12">
-              <input type="submit" name="add_user" class="btn btn-primary add-product" value="Add Product">
+              <input type="submit" name="add_user" class="btn btn-primary add-product" value="Add User">
             </div>
           </div>
           
@@ -247,23 +247,23 @@ var Password=document.myform.password.value;
 
 
 if (User_name==""){  
-  alert("Requre  User name");  
+  alert("Require User name");  
   return false;  
 }
 else if(Email==""){  
-  alert("Requre Enter Email");  
+  alert("Require Email");  
   return false;  
   }  
 else if(Mobileno==""){  
-  alert("Requre Enter Mobile no");  
+  alert("Require Mobile no");  
   return false;  
   }  
 else if(City==""){  
-  alert("Requre Enter City");  
+  alert("Require City");  
   return false;  
   }  
 else if(Password==""){  
-  alert("Requre Enter Password");  
+  alert("Require Password");  
   return false;  
   }  
 

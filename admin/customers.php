@@ -28,7 +28,7 @@ if (!isset($_SESSION['admin'])) {
       		<h2>Customers</h2>
       	</div>
         <div class="col-2">
-          <button data-toggle="modal" data-target="#add_custemer_modal" class="btn btn-primary btn-sm">Add Movie</button>
+          <button data-toggle="modal" data-target="#add_custemer_modal" class="btn btn-primary btn-sm">Add Customer</button>
         </div>
       </div>
       
@@ -36,17 +36,17 @@ if (!isset($_SESSION['admin'])) {
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>id</th>
+              <th>Id</th>
               <th>Name</th>
               <th>Movie</th>
-              <th>Theater</th>
+              <th>Theatre</th>
               <th>Show_time</th>
               <th>Seat</th>
               <th>Total Seat</th>
               <th>Price</th>
               <th>Payment Date</th>
               <th>Booking Date</th>
-              <th>Custemer</th>
+              <th>Customer</th>
             </tr>
           </thead>
           <tbody id="customer_list">
@@ -63,12 +63,12 @@ if (mysqli_num_rows($result) > 0) {
               <td><?php echo $row['username'];?></td>
               <td><?php echo $row['movie'];?></td>
               <td><?php echo $row['theater'];?></td>
-              <td><?php echo $row['booking_date'];?></td>
               <td><?php echo $row['show_time'];?></td>
               <td><?php echo $row['seat'];?></td>
               <td><?php echo $row['totalseat'];?></td>
               <td><?php echo $row['price'];?></td>
               <td><?php echo $row['payment_date'];?></td>
+              <td><?php echo $row['booking_date'];?></td>
               <td><?php echo $row['custemer_id'];?></td>
                             
             </tr>
@@ -90,7 +90,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Movie</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -150,7 +150,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Total Seat</label>
+                <label>Total Seats</label>
                 <input type="number" name="totalseat" class="form-control" placeholder="Enter Total Seat">
               </div>
             </div>
@@ -161,7 +161,7 @@ if (mysqli_num_rows($result) > 0) {
               </div>
             </div>
            <div class="col-12">
-              <input type="submit" name="customers" class="btn btn-primary add-product" value="Add Product">
+              <input type="submit" name="customers" class="btn btn-primary add-product" value="Add Customer">
             </div>
           </div>
           
@@ -187,26 +187,26 @@ var price=document.myform.price.value;
   
 
 if (username_id==""){  
-  alert("Reqiure username");  
+  alert("Require username");  
   return false;  
 }else if(movie==""){  
-  alert("Reqiure Movie");  
+  alert("Require Movie");  
   return false;  
   } 
 else if(show_time==""){  
-  alert("Reqiure Show Time");  
+  alert("Require Show Time");  
   return false;  
   }
 else if(seat==""){  
-  alert("Reqiure seats");  
+  alert("Require seats");  
   return false;  
   }
 else if(totalseat==""){  
-  alert("Reqiure Total Seat");  
+  alert("Require Total Seat");  
   return false;  
   }
 else if(price==""){  
-  alert("Reqiure Total Seat");  
+  alert("Require Total Seat");  
   return false;  
   }
 }
