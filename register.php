@@ -36,8 +36,7 @@ $status=1;
 	else
 	{
 		echo "hii";
-	 //echo "<script>window.location = 'login_form.php';</script>";
+	 	echo "<script>window.location = 'login_form.php';</script>";
 	}
-
 }
 ?>

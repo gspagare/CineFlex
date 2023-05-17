@@ -13,7 +13,7 @@
 	<img class="login_bg" src="login_bg.jpg" alt="NO BG">
 				<div class="loginholder">
 					<h2>Login Here</h2>
-					<a href="./index.html"><img src="img/logo1.png" alt="no image found" width="150px"><a>
+					<img src="img/logo1.png" alt="no image found" width="150px" style="margin-left: 25%;">
 					<form>
 						<div class="userbox">
 							<input type="text" name="" class="inputbox" id="username" required=""/>

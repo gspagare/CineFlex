@@ -1,3 +1,8 @@
+<?php
+include_once "Database.php";
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,6 +12,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Registration Page</title>
+	<script src="js/jquery-3.5.1.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<script type="text/javascript" src="ajaxValidation.js"></script>
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
@@ -39,7 +47,7 @@
 			    <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Password">
 			  </div>
 			  <input type="hidden" name="admin_register" value="1">
-			  <button type="button" class="btn btn-primary register-btn">Register</button>
+			  <button type="submit" class="btn btn-primary register-btn">Register</button>
 			</form>
 		</div>
 	</div>
@@ -80,3 +88,25 @@
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<?php
+
+if (isset($_POST['submit']))
+	{
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$password=$_POST['password'];
+		$is_active=$_POST['is_active'];
+
+		$status=1;
+			$insert_record=mysqli_query($conn,"INSERT INTO 'admin' (`name`,`email`,`password`)VALUES('".$name."','".$email."','".$password."')");
+			if(!$insert_record) {
+				echo "not inserted";
+			}
+			else
+			{
+				echo "hii";
+	 			echo "<script>window.location = 'login.php';</script>";
+			}
+	}
+?>
