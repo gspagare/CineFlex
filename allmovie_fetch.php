@@ -41,8 +41,8 @@ if(isset($_POST["action"]))
 					<img src="admin/image/'. $row['image'] .'" alt="" class="resize" style="height:200px;" >
 					<p align="center"><strong><h4>'. $row['movie_name'] .'</h4></strong></p>
 					
-					Directer : '. $row['directer'] .' <br />
-					Categroy : '. $row['categroy'] .'<br />
+					Director : '. $row['directer'] .' <br />
+					Category : '. $row['categroy'] .'<br />
 					Language : '. $row['language'] .'</p>
 					
 				</div>
@@ -59,8 +59,8 @@ if(isset($_POST["action"]))
 					<img src="admin/image/'. $row['image'] .'" alt="" class="resize" style="height:200px;" >
 					<p align="center"><strong><h4>'. $row['movie_name'] .'</h4></strong></p>
 					
-					Directer : '. $row['directer'] .' <br />
-					Categroy : '. $row['categroy'] .'<br />
+					Director : '. $row['directer'] .' <br />
+					Category : '. $row['categroy'] .'<br />
 					Language : '. $row['language'] .'</p>
 					
 				</div>

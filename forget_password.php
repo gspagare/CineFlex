@@ -44,7 +44,7 @@
             
 					</tr>
 					<tr>
-						<td><b>Conform Password</b></td>
+						<td><b>Confirm Password</b></td>
 					</tr>
 					<tr>
 						<td><input type="password" class="inputbox" id="cpassword"/>

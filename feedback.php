@@ -10,7 +10,7 @@ session_start();
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Feeback Page</title>
+    <title>Feedback Page</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -43,7 +43,7 @@ include("header.php");
            <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0">
 
-              <h2 class="mb-5">Fill the form. <br> It's easy.</h2>
+              <h2 class="mb-5">Give us your valuable feedback.</h2>
               <form onsubmit="return feedbackvalidate();">
             
                 <div class="row">
@@ -71,7 +71,7 @@ if (!isset($_SESSION['uname'])) {
   ?>
 <div class="col-lg-12">
             <div class="form-group">
-                     <button type="button" data-toggle="modal" data-target="#tailer_modal" class="btn btn-dark"><font style="color:white;">Send Massage</font></button>
+                     <button type="button" data-toggle="modal" data-target="#tailer_modal" class="btn btn-dark"><font style="color:white;">Send Message</font></button>
                   </div>
     </div>
       <div class="modal fade" id="tailer_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -87,7 +87,7 @@ if (!isset($_SESSION['uname'])) {
 ?>
                 <div class="row">
                   <div class="col-md-12">
-                              <button type="button" id="feedbackform" class="btn btn-primary">Send Massage</button>          
+                              <button type="button" id="feedbackform" class="btn btn-primary">Send Message</button>          
                   </div>
                 </div>
 <?php }
@@ -97,7 +97,7 @@ if (!isset($_SESSION['uname'])) {
             </div>
             <div class="col-lg-4 ml-auto">
               <h3 class="mb-4">Let's talk about everything.</h3>
-              <p>Do Let Us Carnow Your Thoughts and Suggestions on How We Can Survey You Better. Give us feedback on how you feel about our service.</p>
+              <p>Do Let Us Carnow Your Thoughts and Suggestions on how we Can survey you better. Give us feedback on how you feel about our service.</p>
               
             </div>
           </div>

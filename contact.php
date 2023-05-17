@@ -12,7 +12,7 @@ session_start();
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Page</title>
+    <title>Contact Us</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -50,9 +50,9 @@ session_start();
                         </div>
                         <ul>
                             <li>
-                                <h4>Surendranagar</h4>
-                                <p>Inox Cinema, Near Upashna Circle, Surendranagar.  <br />+91 966-215-5211
-                                    <br />+91 846-050-2720</p>
+                                <h4>Pune</h4>
+                                <p>Cineflex, Model Colony, Pune.<br />+91 9422499560
+                                    <br />+91 7264997994</p>
                             </li>
                         
                         </ul>

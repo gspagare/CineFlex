@@ -7,7 +7,7 @@
   	<title>Your Ticket</title>
   </head>
   <body>
-  <center><font color="red"><h1>Congretulation You Have to Successfull Payment And Your Seat Book</h1></font>
+  <center><font color="red"><h1>Congratulations your ticket is confirmed.</h1></font>
   	<a href="ticket_show.php" target="_blank"><font color="blue"><h3>Take Your Ticket</h3></center></font></a>
   </body>
   </html>

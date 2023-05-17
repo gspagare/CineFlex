@@ -31,7 +31,7 @@
                             <li><a href="allmovie.php">Drama</a></li>
                             <li><a href="allmovie.php">Comedy</a></li>
                             <li><a href="allmovie.php">History</a></li>
-                            <li><a href="allmovie.php">Hrror</a></li>
+                            <li><a href="allmovie.php">Horror</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,8 +39,7 @@
                     <div class="footer__widget">
                         <h6>LOCATION</h6>
                         <div class="footer__newslatter">
-                            <p>Inox Cinema, Near Upashna Circle, 
-                                Wadhwan,Surendranagar-363020,
+                            <p>CIneflex, near Model Colony, Pune
                                
 </p>
                             
@@ -55,9 +54,10 @@
                         <p>Copyright ©
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>2020
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </script>
+                            All rights reserved 
+                            <!-- | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>

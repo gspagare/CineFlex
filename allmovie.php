@@ -47,7 +47,7 @@ include('database_connection.php');
             <div class="col-md-3">                				
 				
 				<div class="list-group">
-					<h3>categroy</h3>
+					<h3>Category</h3>
                     <?php
 
                     $query = "
@@ -69,7 +69,7 @@ include('database_connection.php');
                 </div>
 				
 				<div class="list-group">
-					<h3> language</h3>
+					<h3> Language</h3>
 					<?php
                     $query = "
                     SELECT DISTINCT(language) FROM add_movie WHERE status = '1' ORDER BY language DESC

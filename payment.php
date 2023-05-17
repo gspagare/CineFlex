@@ -159,7 +159,7 @@ if (!isset($_SESSION['uname'])) {
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <div class="form-group"> <label><span class="hidden-xs">
-                                                    <h6>Expiration Date</h6>
+                                                    <h6>Expiry Date</h6>
                                                 </span></label>
                                             <div class="input-group"> <input type="date" id="ex_date" placeholder="MM" name="ex_date" class="form-control">
                                             </div>

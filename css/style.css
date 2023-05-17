@@ -290,9 +290,9 @@ ol {
 }
 
 .header__top__links {
+	width: 250px;
 	display: flex;
 	/* margin-right: -10px; */
-	width: 200px;
 	float: right;
 	right: 0;
 }
@@ -779,8 +779,7 @@ img, video, iframe, embed, object {
 	text-align: justify;
 }
 #aboutUs {
-	padding-top: 35px;
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 	overflow: hidden;
 }
 #aboutUs .feature {

@@ -38,7 +38,7 @@ include("header.php");
     <div class="heading text-left"> 
       <!-- Heading -->
       <div>
-      	<h2><u>About Us</u></h2>
+      	<h2 style="color: black; text-align: center; width:100%;">About Us</h2>
       </div>
       <div class="wel_line"><center><h3>WELCOME TO CINEFLEX</h3></center></div>
     </div>
