@@ -10,7 +10,6 @@
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
-
 <?php session_start();  
 if (!isset($_SESSION['admin'])) {
   header("location:login.php");
@@ -38,11 +37,11 @@ if (!isset($_SESSION['admin'])) {
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>id</th>
+              <th>Id</th>
               <th>Movie name</th>
-              <th>Directer</th>
-              <th>categroy</th>
-              <th>language</th>
+              <th>Director</th>
+              <th>Category</th>
+              <th>Language</th>
               <th>Show</th>
               <th>Image</th>
               <th>Action</th>
@@ -360,4 +359,14 @@ if (name==""){
 }
 
 </script>
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="modal"]').click(function() {
+      var target = $(this).data('target');
+      $(target).modal('show');
+    });
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 

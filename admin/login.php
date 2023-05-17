@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Username and password validation in PHP using AJAX</title>
+  <title>Login Page</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="ajaxValidation.js"></script>

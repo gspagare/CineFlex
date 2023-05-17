@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
-
+  
 <?php session_start();
 if (!isset($_SESSION['admin'])) {
   header("location:login.php");
@@ -214,3 +214,5 @@ else if(show==""){
 </script>  
 
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
