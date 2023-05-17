@@ -40,15 +40,15 @@ include("header.php");
       <div>
       	<h2><u>About Us</u></h2>
       </div>
-      <div class="wel_line"><center><h3>WELCOME TO INOX THEATER  </h3></center></div>
+      <div class="wel_line"><center><h3>WELCOME TO CINEFLEX</h3></center></div>
     </div>
     <div class="row feature design">
 
       <div class="area1 columns left">
         
-        <h5>INOX Theater is the most recognisable ﬁlm exhibition brands in the country which has high standards of ‘Luxury’, ‘Service’ & ‘Technology’.</h5>
+        <h5>CINEFLEX is the most recognisable ﬁlm exhibition brands in the country which has high standards of ‘Luxury’, ‘Service’ & ‘Technology’.</h5>
         <p>Currently with a Cinema circuit of 450 + screens spread across 100+ properties covering 100+ cities across the country.
-        The best thing about using it is the simplicity and ease with which a person can book the tickets online.Coming from Chennai, that has a rich legacy of cinema, we are a theatre chain with a passion for experiences and an even bigger passion to share them with our customers. We understand the joy of watching our favourite stories come alive on the big screen, and believe that it is our duty to go the extra mile to make this experience as immersive as we possibly can!
+        The best thing about using it is the simplicity and ease with which a person can book the tickets online. Coming from Pune, that has a rich legacy of cinema, we are a theatre chain with a passion for experiences and an even bigger passion to share them with our customers. We understand the joy of watching our favourite stories come alive on the big screen, and believe that it is our duty to go the extra mile to make this experience as immersive as we possibly can!
         The company was instrumental in bringing computer-based digital non-linear editing to India with Avid Technology, transforming the industry and forever changing the way Indian film and television programs were edited. The company subsequently brought digital cinema sound to India with DTS and helped Indian cinema leapfrog a generation, form mono sound directly to digital.
         <br>
     It is available for 24 X 7 hours.  </p> 
@@ -88,7 +88,7 @@ include("header.php");
 
                                                         </div>
                                                         <div class="dvPatronDescText">
-                                                           Inox theater is a leading chain of multiplex spread over Gujarat.The multiplex shows Hindi and English movies. It caters best in class cinematic experience to its patrons.
+                                                           Cineflex is a leading chain of multiplex spread over Pune. The multiplex shows Hindi and English movies. It caters best in class cinematic experience to its patrons.
                                                         </div>
                                                     </div>
                                                 </div>
@@ -106,7 +106,7 @@ include("header.php");
                                                             Service
                                                         </div>
                                                         <div class="dvPatronDescText">
-                                                            Weekend popcorn,cold drinks,snacks and 'masala' on screen.We are committed to provide our guests with an unparalleled cinema journey, which is underlined by the warmth of our top notch service 
+                                                            Weekend popcorn,cold drinks,snacks and 'masala' on screen.We are committed to provide our guests with an unparalleled cinema journey, which is underlined by the warmth of our top notch service. 
                                                         </div>
                                                     </div>
                                                 </div>
