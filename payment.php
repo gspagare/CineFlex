@@ -126,7 +126,7 @@ if (!isset($_SESSION['uname'])) {
                                 Theater: '.$row['theater'].'<br>  
                                 Total Seats: '.$_POST['totalseat'].' <br>
                                 Time: '.$_POST['show'].'<br>
-                                Booking Date: '.date("D-m-y ",strtotime($date)).'
+                                Booking Date: '.date("D-m-y ",strtotime('tomorrow')).'
                             
                             </div>' ;
                                 

@@ -108,9 +108,9 @@ include("header.php");
          }
           ?>
 
-          <input type="date" value="date" name="date" id="date" required style="height: 45px; border-radius: 5px;" <?php 
-          // $date = $row['date'];
-          ?>>
+          <!-- <input type="date" value="date" name="date" id="date" required style="height: 45px; border-radius: 5px;"  -->
+          <!-- // $date = $row['date']; -->
+  
         
        
       </div>
