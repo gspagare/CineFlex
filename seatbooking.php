@@ -48,10 +48,7 @@
                 var count = $("[type='checkbox']:checked").length;
                 $('#count').val($("[type='checkbox']:checked").length);
 
-                if(count == 8){
-                    document.getElementById('notvalid').innerHTML="Maximun seat seleact 8"
-            return false;
-                }
+
 
         });
         });
@@ -76,7 +73,12 @@
         echo $row['seat'];
         echo ",";
       }?>">
-      <center><input type="submit" name="submit" class="btn btn-primary" value="Check Avaliable Seat"></center></form>
+      <div class="priceshow">
+        <div class="price price_silver"><h4>Silver</h4>Price : 100Rs</div>
+        <div class="price price_gold"><h4>Gold</h4>Price : 150Rs</div>
+        <div class="price price_platinum"><h4>Platinum</h4>Price : 300Rs</div>
+      </div>
+      <center><input type="submit" name="submit" class="btn btn-primary" value="Check Available Seats"></center></form>
       <hr>
 
 <form action="payment.php" method="post">
@@ -651,7 +653,7 @@
         </div>
     </div>
     
-         <div class="seat_type">Platimun : 300</div>
+         <div class="seat_type">Platinum : 300</div>
 
       <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-5">
@@ -749,10 +751,10 @@
                 <td bgcolor="ECF68C"><center><font size=5 style="font-family: Shruti;"><?php echo $_GET['time'];?></font></center></td>
             </tr>
             <tr><td width="50%"><font color="blue" size="5px" style="font-family: Shruti;">Seat:</font></td>
-                <td> <input type="text" id="selectedtext" name="seats" placeholder="selected checkboxs"></td>
+                <td> <input type="text" id="selectedtext" name="seats" placeholder="selected checkboxes"></td>
             </tr>
-            <tr><td width="50%"><font color="blue" size="5px"style="font-family: Shruti;">Total Seat:</font></td>
-               <td> <input type="text" id="count" name="totalseat" placeholder="Total Seats"></td>
+            <tr><td width="50%"><font color="blue" size="5px"style="font-family: Shruti;">Total Seats:</font></td>
+                <td> <input type="text" id="count" name="totalseat" placeholder="Total Seats"></td>
             </tr>  
             <input type="hidden" name="movie" value="<?php echo $_GET['movie'];?>">
             <input type="hidden" name="show" value="<?php echo $_GET['time'];?>">
@@ -789,9 +791,8 @@ if (!isset($_SESSION['uname'])) {
 <div id="count1"></div>
     </div>
 </div>
-    <?php
-}
-?>
+<?php } ?>
+
 </div>
 
 

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Customer Page</title>
+    <title>Bookings Page</title>
     <link rel="stylesheet" href='css/all.css' type='text/css'>
     <link rel="stylesheet" href='css/bootstrap.min.css' type='text/css'>
     <link rel="stylesheet" href='css/dashboard.css' type='text/css'>
@@ -25,11 +25,8 @@ if (!isset($_SESSION['admin'])) {
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Customers</h2>
+      		<h2>Bookings</h2>
       	</div>
-        <div class="col-2">
-          <button data-toggle="modal" data-target="#add_custemer_modal" class="btn btn-primary btn-sm">Add Customer</button>
-        </div>
       </div>
       
       <div class="table-responsive">

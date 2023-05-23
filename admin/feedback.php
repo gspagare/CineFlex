@@ -23,14 +23,7 @@ if (!isset($_SESSION['admin'])) {
     
     <?php include "./templates/sidebar.php"; ?>
 
-      <div class="row">
-      	<div class="col-10">
-      		<h2>Feedback</h2>
-      	</div>
-      	<div class="col-2">
-      		<a href="#" data-toggle="modal" data-target="#add_feedback_modal" class="btn btn-primary btn-sm">Add Feedback</a>
-      	</div>
-      </div>
+
       
       <div class="table-responsive">
         <table class="table table-striped table-sm">

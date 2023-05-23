@@ -8,22 +8,12 @@ font-size: 16px;
 
 }
 
-.parent-container
-{
-width: 50%;
-height: 50%;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8386db+1,5057d8+27,383de0+51,383de0+51,383ee2+70,161ae5+100 */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8386db+1,5057d8+44,383de0+65,383ee2+81,383ee2+81,161ae5+100 */
-background: url(imagyyy.jpg); /* Old browsers */
-
-opacity: 0.9;
-}
-
 .loginholder
 {
 padding: 20px 5px 25px 5px;
 background-color: #fff;
 display: inline-block;
+margin: auto;
 }
 
 .inputbox

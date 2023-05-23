@@ -126,7 +126,7 @@ if (!isset($_SESSION['uname'])) {
                                 Theater: '.$row['theater'].'<br>  
                                 Total Seats: '.$_POST['totalseat'].' <br>
                                 Time: '.$_POST['show'].'<br>
-                                Booking Date: '.date("D-m-y ",strtotime('tomorrow')).'
+                                Booking Date: '.date("D-m-y ",strtotime($date)).'
                             
                             </div>' ;
                                 
@@ -177,7 +177,7 @@ if (!isset($_SESSION['uname'])) {
                                 <div class="seatCharts-container">
            
                                              <div class="front">
-                                                <font text-align="left">&nbsp;&nbsp;&nbsp;Amount Payble: </font>
+                                                <font text-align="left">&nbsp;&nbsp;&nbsp;Amount Payable: </font>
                                                 <font text-align="right">Rs.<?php echo $price;?>/-</font>
                                             </div>
                                 </div>

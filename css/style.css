@@ -590,6 +590,38 @@ img {vertical-align: middle;}
 	cursor: pointer;
 }
 
+.priceshow {
+	margin: auto;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 25px;
+	width: 600px;
+	text-align: center;
+}
+
+.price {
+	border: 1px solid black;
+	border-radius: 5px;
+	transition-duration: 0.5s;
+}
+
+.price_silver:hover {
+	background-color: silver;
+	box-shadow: #03e9f4 0px 0px 5px 5px;
+	transition-duration: 0.5s;
+}
+.price_gold:hover {
+	background-color: gold;
+	box-shadow: #03e9f4 0px 0px 5px 5px;
+	transition-duration: 0.5s;
+}
+.price_platinum:hover {
+	background-color: #E5E4E2;
+	box-shadow: #03e9f4 0px 0px 5px 5px;
+	transition-duration: 0.5s;
+}
+
 /*--------------------------
 	about
 --------------------------*/

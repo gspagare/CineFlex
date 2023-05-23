@@ -8,18 +8,13 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-<div>
-	<div class="parent-container">
-
-		<table width="100%" height="100%">
-		<tr>
-			<td align="center" valign="middle">
-				<div class="loginholder">
-        
+	<!-- <div class="parent-container"> -->
+			<div width="100%" height="100vh" align="center">
+				<div class="loginholder" style="border: 2px solid black; margin-top: 15%; padding: 20px; top: 50%; z-index: 10;">
 					<table style="background-color:white;" class="table-condensed">
 					<tr>
 
-  						<a href="./index.html"><img src="img/logo.png" alt="" width="250px"></a>
+  						<!-- <a href="./index.html"><img src="img/logo.png" alt="" width="250px"></a> -->
 					</tr>
 					<tr>
 						<td><b>Email Id:</b></td>
@@ -29,7 +24,7 @@
               <br><p id="emailerror"></p></td>
 					</tr>
 					<tr>
-						<td><b>Old Password Id:</b></td>
+						<td><b>Old Password:</b></td>
 					</tr>
 					<tr>
 						<td><input type="password" class="inputbox" id="oldpassword"/>
@@ -59,12 +54,7 @@
 				
 
 					</table>
-        
-				</div>
-			</td>
-		</tr>
-		</table>
-	</div>
+</div>
 </div>
 <script type="text/javascript">
 
@@ -78,7 +68,7 @@
    
      if( email == "" )
  {
-  error = " <font color='red'>!Requrie Name.</font> ";
+  error = " <font color='red'>!Requried Name.</font> ";
   document.getElementById( "emailerror" ).innerHTML = error;
   return false;
  }

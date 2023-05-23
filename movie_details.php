@@ -77,14 +77,7 @@ include("header.php");
           </tr>
          
           <tr>
-            <td>Trailer</td><td><a data-toggle="modal" data-target="#tailer_modal<?php echo $row['id'];?>">View Trailer</a></td>
-            <div class="modal fade" id="tailer_modal<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <embed style="width: 820px; height: 450px;" src="<?php echo $row['you_tube_link'];?>"></embed>
-    </div>
-  </div>
-</div> 
+            <td>Trailer</td><td><a href="<?php echo $row['you_tube_link'];?>" target="_blank">View Trailer</a></td>
           </tr>
           
           </tbody>
@@ -114,6 +107,10 @@ include("header.php");
            }
          }
           ?>
+
+          <input type="date" value="date" name="date" id="date" required style="height: 45px; border-radius: 5px;" <?php 
+          // $date = $row['date'];
+          ?>>
         
        
       </div>
@@ -148,14 +145,14 @@ include("footer.php");
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>     
