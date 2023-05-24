@@ -26,10 +26,7 @@ if (!isset($_SESSION['admin'])) {
       <div class="row">
       	<div class="col-10">
       		<h2>Users</h2>
-      	</div>
-      	<div class="col-2">
-      		<a href="#" data-toggle="modal" data-target="#add_users_modal" class="btn btn-primary btn-sm">Users detail</a>
-      	</div>
+</div>
       </div>
       
       <div class="table-responsive">
@@ -62,8 +59,10 @@ if (mysqli_num_rows($result) > 0) {
               <td><?php echo $row['city'];?></td>
               <td><?php echo $row['password'];?></td>
               <td><img src="image/<?php echo $row['image']; ?>" alt="" class="resize"></td>
-              <td><button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit User</button>
-              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete User</button></td></td>
+              <td>
+                <!-- <button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit User</button> -->
+              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete User</button>
+  </td>
             </tr>
 
  <div class="modal fade" id="delete_users_modal<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -165,70 +164,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<!-- Add User Modal start -->
-<div class="modal fade" id="add_users_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Enter Details</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form name="myform" id="insert_movie" action="insert_data.php" method="post" enctype="multipart/form-data" onsubmit="return validateform()" >
-          <div class="row">
-            <div class="col-12">
-              <div class="form-group">
-                <label>Username</label>
-                <input class="form-control" name="username" id="username" placeholder="Enter User name" >
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label> Email</label>
-                <input class="form-control" name="email" id="email" placeholder=" Enter Email">
-              </div>
-            </div>
-      
-            <div class="col-12">
-              <div class="form-group">
-                <label>Mobile no</label>
-                <input type="number" class="form-control" name="mobile" id ="mobile" placeholder="Enter Mobile no">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>City</label>
-                <input type="text" name="city" id="city" class="form-control" placeholder="Enter City Name">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Password</label>
-                <input type="text" name="password" id="Password" class="form-control" placeholder="Enter Password">
-              </div>
-            </div>
-            
-            <div class="col-12">
-              <div class="form-group">
-                <label>Image</label>
-                <input type="file" name="img" value="img" id="img" class="form-control">
-              </div>
-            </div>
-            <input type="hidden" name="add_product" value="1">
-              <div class="col-12">
-              <input type="submit" name="add_user" class="btn btn-primary add-product" value="Add User">
-            </div>
-          </div>
-          
-        </form>
-        <div id="preview"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Add User Modal end -->
+
 
 
 <?php include_once("./templates/footer.php"); ?>
