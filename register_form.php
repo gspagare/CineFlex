@@ -11,6 +11,7 @@
    </head>
 <body>
 
+<<<<<<< Updated upstream
   <div class="parent-container">
   <img class="login_bg" src="login_bg.jpg" alt="NO BG">
     <div class="register_holder">
@@ -51,6 +52,48 @@
         <div class="userbox">
           <span>Upload Your Profile Picture (Optional)</span>
           <input type="file" accept="image/jpg, image/jpeg, image/png" class="inputbox" id="image" name="image">
+=======
+  <div class="container">
+    <center><a href="./index.html"><img src="img/logo.png" alt="" style="margin-top: 80px; width: 50%;"></a></center>
+    <div class="content">
+    <div class="title">Registration</div>
+      <form id="form" action="register.php" method="post" enctype="multipart/form-data" onsubmit="return validate();">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">UserName</span>
+            <input type="text" id="username" name="username" placeholder="Enter your name">
+            <p id="nameerror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" name="email" placeholder="Enter your Email">
+            <p id="emailerror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="number" name="number" placeholder="Enter your Phone Number">
+          	<p id="numbererror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" id="city" name="city" placeholder="Enter your City">
+          	<p id="cityerror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+          	<p id="passworderror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password">
+          	<p id="cpassworderror"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Image uploaded (Option)</span>
+            <input type="file" id="image" name="image">
+          </div>
+>>>>>>> Stashed changes
         </div>
         <p id="error_para" ></p>
         <div id="err"></div>

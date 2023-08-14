@@ -27,7 +27,11 @@
 						</div>
 						<a class="loginbtn" id="login">LOGIN</a>
 						<div class="new_text">
+<<<<<<< Updated upstream
 							<a href="forget_password.php">Forgot your Password ?</a>
+=======
+							<a href="forget_password.php"> Forget your Password ?</a>
+>>>>>>> Stashed changes
 							<a href="register_form.php">Register now</a>
 						</div>
 					</form>        
